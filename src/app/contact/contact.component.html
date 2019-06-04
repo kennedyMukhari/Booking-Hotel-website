@@ -1,0 +1,75 @@
+
+
+
+<div class="back">
+
+    <div class= "col-md-4">
+        <div class="alert alert-primary alert-dismissible " *ngIf="msg">
+          <a href="#" class="close" (click)="clickMe()">&times;</a>
+          {{msg}}
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/login">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/register">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/pay"></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Email Address" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="email">Subscribe</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="contactMe">
+
+        <h1>Contact Me</h1>
+        <form>
+          <div class="form-group">
+              <label class="label-form">Full Names:</label>
+              <input type="text" name="name" class="input-form" placeholder="Enter your full name">
+          </div>
+           <div class="form-group">
+              <label class="label-form">E-mail:</label>
+              <input type="email" name="email" class="input-form" placeholder="Enter your email address">
+           </div>
+          <div class="form-group">
+            <label class="label-form">Message:</label>
+            <textarea cols="25" rows="10" name="message" class="input-form" placeholder="Please enter message"></textarea>
+            </div>
+            <div class="form-group">.
+                <button class="btn btn-info" (click)="contact()" value="Send" >Send</button>
+                <!-- <input type="button" (click)="contact()" value="Send" style="color: blue "> -->
+            </div>
+     
+        </form>
+     
+      </div>
+</div>

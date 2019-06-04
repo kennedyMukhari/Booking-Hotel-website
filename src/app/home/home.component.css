@@ -1,0 +1,165 @@
+.main {
+    position: relative;
+    background-image: url(../../assets/beach-resort.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 99%;
+}
+.name {
+    position: absolute;
+    top: 10%;
+    right: 40%;
+}
+.name h1 {
+    color:white;
+    letter-spacing: 10px;
+    font-size: 60px;
+    font-family: Segoe UI;
+}
+.resort{
+    position: absolute;
+    top: 15%;
+    right: 45%;;
+}
+.button {
+    position: absolute;
+    top: 78%;
+    padding-left: 100px; 
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+  /* @keyframes example {
+    0%   {background-color:transparent; right:0px; top:0px;}
+    25%  {background-color:transparent; right:400px; top:0px;}
+    50%  {background-color:transparent; right:400px; bottom:400px;}
+    75%  {background-color:transparent; right:400px; bottom:0px;}
+    100% {background-color:transparent; right:0px; bottom:0px;}
+  } */
+
+.button input{
+    height: 40px;
+    width: 120px;
+    border-radius: 45%;
+    background-color:#2096BB;
+    color: white;
+    outline: none;
+    font-weight: bold;
+    font-family: Segoe UI;
+}
+.resort h2 {
+    color:white;
+    letter-spacing: 10px;
+    font-size: 45px;
+    font-family: Segoe UI;
+}
+.nav {
+    width: 100%;
+}
+.nav-link:hover {
+    font-size: 200%;
+}
+/* h1{
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+} */
+/* @keyframes rotate {
+    0% {
+        transform: rotate(-60deg);
+    }100%{
+        transform: rotate(60eg);
+    }
+} */
+
+/* .slideshow {
+    
+    width: 700px;
+    position:absolute;
+    right:40%;
+    margin-top:20%;
+} */
+.msg {
+    position: absolute;
+    top: 90%;
+    background: rgb(32, 151, 187);
+    left: 20px;;
+    box-shadow: 1px 1px;
+}
+.msg p {
+    color: white;
+    font-size: 20px;
+
+}
+.list {
+    position: absolute;
+    top: 11%;
+    right: 6%;
+    background: transparent;
+    width: 300px;
+    height: 250px;
+    color: white;
+    border: 1px solid;
+}
+.list li{
+    /* list-style: none; */
+    /* left: 100px; */
+    margin-left: 54px;
+}
+.list h1 {
+    text-align: center;
+}
+.special{
+    top: 10%;
+    left:20px;
+    position: absolute;
+    background:white;
+}
+.save {
+    position: absolute;
+    left: 20px;
+    top:16%;
+    background: purple;
+    color: white;
+}
+.upto {
+    position: absolute;
+    top: 25.2%;
+    left: 20px;
+    background: orange;
+    color: white;
+}
+#off {
+    font-weight: bold;
+    font-size: 20px;
+}
+#glance {
+    position: absolute;
+    margin-top:19.5%;
+    left:80%;
+    background: rgb(32, 151, 187);
+    color: white;
+    width:250px;
+    box-shadow: 1px 1px black;
+}
+#glance span img{
+    height: 140px;
+    width:140px;
+    
+}
+#glance li{
+    font-size: 18px;
+}
+#glance h1{
+    font-size: 30px;
+    text-align: center; 
+}
+#glance #price{
+    background: rgb(3, 57, 73);
+}
+#glance #price h2{
+    text-align: center;
+}

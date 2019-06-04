@@ -1,0 +1,285 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login">Sign In</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/register">Sign Up</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/gallery">Gallery</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/pay"></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Email Address" aria-label="Search">
+      <button class="btn btn-outline-info my-2 my-sm-0" type="email">Subscribe</button>
+    </form>
+  </div>
+</nav>
+
+
+
+
+
+<div class="row">
+    <div class="col-sm"><div class="card" style="width: 18rem;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv1PERtFrG6ieT0jlXzb_BH_LXYvR23XZIFYdWwpNDgCttvVvS" alt="First slide">
+                </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://www.sani-resort.com/uploads/assets/667x444/luxury-lounge-sani-greece-02.jpg" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="https://myfancyhouse.com/wp-content/uploads/2014/11/Heavenly-Lily-Beach-Resort-Spa-In-Huvahendhoo-Maldives-13.jpg" alt="Third slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+
+                <div class="card-body">
+                  <h6>Suite One</h6>
+                  <h6>Price: R5000.00</h6>
+                  <h5 class="card-title">Booking Details:</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><label></label><input type="text" placeholder="email@example.com"></li>
+                  <li class="list-group-item"><label for="date">Number of days: </label><input type="text" [(ngModel)] = "sho.days" ></li>
+                  <li class="list-group-item"><label for="numberOfGuests">Number Of Guests: </label><input type="text" name="numberOfGuests" [(ngModel)] = "sho.guests"  ></li>
+                  <button (click) = "save(i = 1)" class="btn btn-success" >Book Now</button>
+                  <li class="list-group-item"><label for="TOTAL AMOUNT">Total Amount: </label><input type="text" [(ngModel)] = "sho2.total" ></li>
+                  <li class="list-group-item">
+                      <pre>
+Your booking has been made for {{this.guests}}.
+You will be staying for {{this.days}} days.
+The total amount will be R{{this.total}}.
+                      </pre>
+                  </li>
+                  
+                </ul>
+                
+        <div class="card-body">
+          <input type="submit" value="Pay Now" class="pay btn-info" style="margin-left: 80px" routerLink="/pay">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm"><div class="card" style="width: 18rem;">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLfTh982atHTQP3qmCBkioPSSu0n0r3xKnpYmyHhwIZ-H5jZ-R" alt="First slide">
+                  </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="http://ultimatejetvacations.com/images_resort/thompson-miami-beach-oceanfront-grand-balcony-king_1458055227_0.jpeg" alt="Second slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="http://www.silverspoonlondon.co.uk/wp-content/uploads/2017/03/Luxury-Hotel-Review-Four-Seasons-Dubai-Jumeirah-Beach-8585.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+        <div class="card-body">
+          <h6 class="card-title">Suite two</h6>
+          <h6>Price: R2000.00</h6>
+          <h5 class="card-title">Booking Details:</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><label></label><input type="text" placeholder="email@example.com"></li>
+            <li class="list-group-item"><label for="date">Number of days: </label><input type="text" [(ngModel)] = "sho11.days" ></li>
+            <li class="list-group-item"><label for="numberOfGuests">Number Of Guests: </label><input type="text" name="numberOfGuests" [(ngModel)] = "sho11.guests"  ></li>
+            <button (click) = "save(i = 2)" class="btn btn-success">Book Now</button>
+            <li class="list-group-item"><label for="TOTAL AMOUNT">Total Amount: </label><input type="text" [(ngModel)] = "sho22.total" ></li>
+            <li class="list-group-item">
+
+              <pre>
+Your booking has been made for {{this.guests}}.
+You will be staying for {{this.days}} days.
+The total amount will be R{{this.total}}.
+              </pre>
+            </li>
+          </ul>
+        <div class="card-body">
+          <input type="submit" value="Pay Now" class="pay btn-info" style="margin-left: 80px" routerLink="/pay">
+        </div>
+      </div>
+    </div>
+    <div class="col-sm">
+        <div class="col-sm"><div class="card" style="width: 18rem;">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZz6OP5RejxK83TpJexD4ApNE-T_WUPHWk3CDj4iG3gWl-855GXA" alt="First slide">
+                      </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://s-ec.bstatic.com/images/hotel/max1280x900/121/121403894.jpg" alt="Second slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="https://www.sani-resort.com/uploads/assets/667x444/luxury-room-1-sani-halkidiki-04.jpg" alt="Third slide">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+            <div class="card-body">
+              <h6 class="card-title">Suite Three</h6>
+              <h6>Price: R3000.00</h6>
+              <h5 class="card-title">Booking Details:</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item"><label></label><input type="text" placeholder="email@example.com"></li>
+                <li class="list-group-item"><label for="date">Number of days: </label><input type="text" [(ngModel)] = "sho222.days" ></li>
+                <li class="list-group-item"><label for="numberOfGuests">Number Of Guests: </label><input type="text" name="numberOfGuests" [(ngModel)] = "sho222.guests"  ></li>
+                <button (click) = "save(i = 3)" class="btn btn-success" >Book Now</button>
+                <li class="list-group-item"><label for="TOTAL AMOUNT">Total Amount: </label><input type="text" [(ngModel)] = "sho33.total" ></li>
+                <li class="list-group-item">
+    
+                  <pre>
+Your booking has been made for {{this.guests}}.
+You will be staying for {{this.days}} days.
+The total amount will be R{{this.total}}.
+                  </pre>
+                </li>
+              </ul>
+            <div class="card-body">
+              <input type="submit" value="Pay Now" class="pay btn-info" style="margin-left: 80px" routerLink="/pay">
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="col-sm">
+      <div class="col-sm"><div class="card" style="width: 18rem;">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="https://cdn.newswire.com/files/x/07/de/8fc477c925f9da48260422a4df18.jpg" alt="First slide">
+                    </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="https://media-cdn.tripadvisor.com/media/photo-s/0d/98/be/95/not-only-do-our-rooms.jpg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="https://thepointsguy.com/wp-content/uploads/2017/11/Bathroom-tub-Al-Maha-Desert-Resort-Dubai-Review.jpg" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+          <div class="card-body">
+            <h6 class="card-title">Suite Four</h6>
+            <h6>Price: R4000.00</h6>
+            <h5 class="card-title">Booking Details:</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item"><label></label><input type="text" placeholder="email@example.com"></li>
+              <li class="list-group-item"><label for="date">Number of days: </label><input type="text" [(ngModel)] = "sho223.days" ></li>
+              <li class="list-group-item"><label for="numberOfGuests">Number Of Guests: </label><input type="text" name="numberOfGuests" [(ngModel)] = "sho223.guests"  ></li>
+              <button (click) = "save(i = 4)" class="btn btn-success" >Book Now</button>
+              <li class="list-group-item"><label for="TOTAL AMOUNT">Total Amount: </label><input type="text" [(ngModel)] = "sho44.total" ></li>
+              <li class="list-group-item">
+  
+                <pre>
+Your booking has been made for {{this.guests}}.
+You will be staying for {{this.days}} days.
+The total amount will be R{{this.total}}.
+                </pre>
+              </li>
+            </ul>
+          <div class="card-body">
+            <input type="submit" value="Pay Now" class="pay btn-info" style="margin-left: 80px" routerLink="/pay">
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="col-sm">
+      <div class="col-sm"><div class="card" style="width: 18rem;">
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="http://oascdn.ownaspace.com/oasv2_large/20158_v2_1.jpg" alt="First slide">
+                    </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="https://pix10.agoda.net/hotelImages/1369392/-1/ecbebf105e155263242ddb6862e732be.jpg?s=1024x768" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="https://www.uniqhotels.com/media/hotels/7c/13.jpg" alt="Third slide">
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+          <div class="card-body">
+            <h6 class="card-title">Suite Five</h6>
+            <h6>Price: R3500.00</h6>
+            <h5 class="card-title">Booking Details:</h5>
+          </div>
+          <ul class="list-group list-group-flush">
+              <li class="list-group-item"><label></label><input type="text" placeholder="email@example.com"></li>
+              <li class="list-group-item"><label for="date">Number of days: </label><input type="text" [(ngModel)] = "sho224.days" ></li>
+              <li class="list-group-item"><label for="numberOfGuests">Number Of Guests: </label><input type="text" name="numberOfGuests" [(ngModel)] = "sho224.guests"  ></li>
+              <button (click) = "save(i = 5)" class="btn btn-success" >Book Now</button>
+              <li class="list-group-item"><label for="TOTAL AMOUNT">Total Amount: </label><input type="text" [(ngModel)] = "sho55.total" ></li>
+              <li class="list-group-item">
+  
+                <pre>
+Your booking has been made for {{this.guests}}.
+You will be staying for {{this.days}} days.
+The total amount will be R{{this.total}}.
+                </pre>
+              </li>
+            </ul>
+          <div class="card-body">
+            <input type="submit" value="Pay Now" class="pay btn-info" style="margin-left: 80px" routerLink="/pay">
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+ 

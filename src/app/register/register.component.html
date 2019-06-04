@@ -1,0 +1,66 @@
+<div class="xterior">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/rooms">Rooms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/pay"></a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Email Address" aria-label="Search">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="email">Subscribe</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="body"></div>
+    <div class="register">
+        <h1>Sign In Here</h1>
+        <form>
+          <label>Firstname</label>
+          <input type="text" name="" placeholder="Enter your name">
+          <label>Lastname</label>
+          <input type="text" name="" placeholder="Enter your Lastname">
+          <label>Cellphone number</label>
+          <select>
+            <option>+254</option>
+            <option>+258</option>
+            <option>+264</option>
+            <option>+27</option>
+            <option>+252</option>
+          </select>
+          <input type="tel" name="" placeholder="Cellphone Number">
+          <label>Email</label>
+          <input type="email" name="" placeholder="name@example.com">
+          <label>Gender </label>
+          <input type="radio" name="male" id="male"><span id="male">&nbsp; Male</span>&nbsp;
+          <input type="radio" name="male" id="male"><span id="male">&nbsp; Female</span>
+          <label>Password</label>
+          <input type="password" placeholder="Password">
+          <label>Confirm password</label>
+          <input type="password" placeholder=" Confirm password">
+          <br><br>
+          <input type="submit" name="" value="Register" class="button">
+          <br>
+          <p>Already have an account?</p><a routerLink="/login" href="login">Login</a>
+  
+        </form>
+        
+    </div>
+  </div>
